@@ -5,13 +5,10 @@ while num <= 0:
 
 source = list()
 for x in range(num):
-    source.append(input(f"Enter list element №{x+1}: "))
+    source.append(input(f"Enter list element №{x + 1}: "))
 print(f"Source list {source}")
 i = 0
 while i < (len(source) - 1):
-    first = source[i]
-    second = source[i + 1]
-    source[i] = second
-    source[i + 1] = first
+    source[i], source[i + 1] = source[i + 1], source[i]
     i += 2
 print(f"Changed list {source}")
