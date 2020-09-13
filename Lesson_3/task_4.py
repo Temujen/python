@@ -9,28 +9,28 @@ def my_func2(x, y):
     return 1/result
 
 
-def check_x(x):
+def check_x(arg):
     while True:
-        if x > '0':
+        if arg > '0':
             try:
-                float(x)
-                return float(x)
+                float(arg)
+                return float(arg)
             except ValueError:
-                x = input("Try again, enter real positive number x: ")
+                arg = input("Try again, enter real positive number x: ")
         else:
-            x = input("Try again, enter real positive number x: ")
+            arg = input("Try again, enter real positive number x: ")
 
 
-def check_y(y):
+def check_y(arg):
     while True:
-        if y < '0':
+        if arg < '0':
             try:
-                int(y)
-                return int(y)
+                int(arg)
+                return int(arg)
             except ValueError:
-                y = input("Try again, enter integer negative number y: ")
+                arg = input("Try again, enter integer negative number y: ")
         else:
-            y = input("Try again, enter integer negative number y: ")
+            arg = input("Try again, enter integer negative number y: ")
 
 
 print("Hello, you need raise 'x' to negative power '-y': x ** (-y)")
