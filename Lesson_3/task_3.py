@@ -4,8 +4,7 @@ def sum_max(a, b, c):
     except ValueError as err:
         print("You need enter number, please try again")
         return
-    temp.pop(temp.index(min(temp)))
-    return sum(temp)
+    return sum(temp) - min(temp)
 
 
 print(sum_max(input("Enter number 1: "), input("Enter number 2: "), input("Enter number 3: ")))
