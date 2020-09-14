@@ -1,12 +1,12 @@
 def my_func1(x, y):
-    return round(x ** y, 3)
+    return round(x ** y, 5)
 
 
 def my_func2(x, y):
     result = 1
     for el in range(abs(y)):
         result *= x
-    return 1/result
+    return round(1/result, 5)
 
 
 def check_x(arg):
