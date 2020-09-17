@@ -12,7 +12,7 @@ def profit(work, rate, prize):
             print("Please enter only positive number, try again")
             return
     except ValueError:
-        print("Please enter only positive number, try again")
+        print("Please enter only 3 positive number, try again")
 
 
-print(profit(work, rate, prize))
+print(f"Your profit is {profit(work, rate, prize)}")
