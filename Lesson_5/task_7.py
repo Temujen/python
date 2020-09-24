@@ -13,4 +13,4 @@ with open('text_7.txt', 'r', encoding='utf-8') as source_file:
 average = {'average_profit': summary/count}
 result = [company_profit, average]
 with open('text_77.json', 'w') as result_file:
-    json.dump(result, result_file)
+    json.dump(result, result_file, ensure_ascii=False, indent=4)
