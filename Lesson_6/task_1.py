@@ -7,13 +7,19 @@ class TrafficLight:
     def running(self):
         while True:
             for sec, switch in TrafficLight.__color.items():
-                print(switch)
+                self.color_set(switch)
                 time.sleep(sec)
-            print(TrafficLight.__color.get(2))
+            self.color_set('Yellow')
             time.sleep(2)
+
+    def color_set(self, check):
+        if check == 'Red':
+            print("\033[31m {}".format(check))
+        elif check == 'Yellow':
+            print("\033[33m {}".format(check))
+        elif check == 'Green':
+            print("\033[32m {}".format(check))
 
 
 street = TrafficLight()
 street.running()
-
-
