@@ -8,7 +8,7 @@ class Road:
         print(f"{self._length}м * {self._width}м * 25кг * 5см = {round(self._length * self._width * 25 * 5 / 1000)}т")
 
 
-a = Road(20, 5000)
+a = Road(5000, 10)
 a.mass()
-b = Road(30, 100)
+b = Road(3000, 10)
 b.mass()
